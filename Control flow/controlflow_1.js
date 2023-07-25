@@ -32,9 +32,10 @@ const debitCard =true
 const LoggedInFromGoogle = false
 const LoggedInFromEmail = true
 if (userLoggedIn && debitCard) {
+    // && means all conditions should be meet
     console.log("Allow to buy course");
 }
-// **************|| pipes symbol to compair together which one is true or match**************************
+// **************|| pipes symbol(or symbol) to compair together which one is true or match**************************
 if (LoggedInFromEmail || LoggedInFromGoogle) {
     console.log("user logged in");
 }
