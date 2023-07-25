@@ -26,5 +26,16 @@ function loginUserMessage(username) {
 // console.log(loginUserMessage("Rishabh"));
 // console.log(loginUserMessage());
 
+function calculateCartPrice(...num1) {                      //using rest operator
+    return num1
+    }
+// console.log(calculateCartPrice(200,400));
 
-
+const user = {
+    username: "Rishabh",
+    price: 777
+}
+function handleObject(anyobject) {
+    console.log(`User name is ${anyobject.username} and price is ${anyobject.price}`);
+}
+handleObject(user)
