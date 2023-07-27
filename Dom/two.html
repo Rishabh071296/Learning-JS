@@ -14,24 +14,32 @@
     </div>
 </body>
 <script>
-   const parent= document.querySelector('.parent')
+//    const parent= document.querySelector('.parent')
 //    console.log(parent);
 //    console.log(parent.children);
 //    console.log(parent.children[1].innerHTML);
 
-for (let i = 0; i < parent.children.length; i++) {
+// for (let i = 0; i < parent.children.length; i++) {
     // console.log(parent.children[i].innerHTML);
     // console.log(parent.firstElementChild);
     // console.log(parent.lastElementChild);
 
     // console.log("NODES", parent.childNodes); Important**************************
-}
+// }
 
 const div = document.createElement('div')
 console.log(div);
+div.className = "main"
+div.id = Math.round (Math.random()* 10 +1) 
 
+div.setAttribute ("title","generated title")
+div.style.backgroundColor = "green"
+div.style.padding = "15px"
+// div.innerText = "Rishabh RS7 Group"***** 1st approch highlight to element....
+ // 2nd approch to highlight the element 
 
-
-
+ const addText = document.createTextNode ("Rishabh RS7 Group")
+ div.appendChild (addText)
+ document.body.appendChild(div)
 </script>
 </html>
