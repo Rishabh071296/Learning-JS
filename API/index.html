@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Call</title>
+</head>
+<body>
+    0 (uninitialized) or (request not initialized) <br>
+    1 (loading) or (server connection established) <br>
+    2 (loaded) or (request received) <br>
+    3 (interactive) or (processing request) <br>
+    4 (complete) or (request finished and response is ready) 
+</body>
+<script>
+    const requestUrl = 'https://api.github.com/users/rishabh071296'
+    const xhr = new XMLHttpRequest();
+    xhr.open ('GET',requestUrl)
+    xhr.onreadystatechange = function (){
+        console.log(xhr.readyState);
+        if (xhr.readyState === 4) {
+            const data = JSON.parse(this.responseText)
+            console.log(typeof data);
+            console.log(data.followers);
+        }
+    } 
+    xhr.send()
+</script>
+</html>
