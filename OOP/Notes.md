@@ -15,3 +15,12 @@ Object literal
 - Prototypes
 - classes
 - Instances (new, this)
+-
+
+
+## 4 pillars
+
+Abstraction- Hide the details (fetch)
+Encapsulation - Rapper-up the data 
+Inheritance - 
+Polymorphism - 
