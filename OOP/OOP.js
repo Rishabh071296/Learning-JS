@@ -29,6 +29,6 @@ function user(username,loginCount,isloggedIn) {
 }
 
 const userOne= new user ("Rishabh",12,true)
-const userTwo= new user ("Raunak" , 7 , false)  //Overrigth the value if you are not written new keyword
+const userTwo= new user ("Raunak" , 7 , false)  //Overigth the value if you are not written new keyword
 console.log(userOne);
 console.log(userTwo);
